@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Open Sans", "sans-serif";
+}
+
+.container {
+  max-width: 1352px;
+  margin: 0 auto;
+}
+
+.menu {
+  background: #0A111F;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.menu .logo .img {
+  border: none;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.menu .logo .img:hover {
+  background: #3A68B8;
+  border-radius: 100%;
+  padding: 0px 12px;
+}
+
+.menu .logo_text {
+  font-weight: 600;
+  font-size: 22.5455px;
+  line-height: 31px;
+  color: #3A68B8;
+  cursor: pointer;
+  -webkit-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.menu .logo_text:hover {
+  color: #ffffff;
+  margin-left: 12px;
+}
+
+.menu_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu_row .rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 84px;
+}
+
+.menu .link_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+.menu .link_list .link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  -webkit-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.menu .link_list .link:hover {
+  color: #3A68B8;
+}
+
+.menu .btn {
+  border: none;
+  background: #3A68B8;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.menu .btn:hover {
+  background: #ffffff;
+  color: black;
+}
