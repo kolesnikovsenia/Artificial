@@ -4,6 +4,10 @@
 	transition: 0.6s all;
 }
 
+@mixin filter {
+	filter: brightness(80%) drop-shadow(10px 10px 18px #3a68b8);
+}
+
 @mixin position_center {
 	display: flex;
 	align-items: center;
@@ -31,12 +35,46 @@
 @mixin small_btn {
 	border: none;
 	background: $_blue;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 22px;
+	@include link;
 	color: $_white;
-	padding: 15px 30px;
+	padding: 13px 30px;
 	border-radius: 5px;
 	cursor: pointer;
+	@include transition;
+}
+
+@mixin pre_title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 160%;
+	color: $_blue;
+	text-transform: uppercase;
+}
+
+@mixin h1 {
+	ont-weight: 800;
+	font-size: 55px;
+	line-height: 130%;
+	color: $_white;
+}
+
+@mixin welcome_text {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 160%;
+	opacity: 0.7;
+	color: $_white;
+}
+
+@mixin welcome_btn {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+	color: $_white;
+	padding: 15px 30px;
+	cursor: pointer;
+	border: none;
+	background: $_blue;
+	border-radius: 6px;
 	@include transition;
 }

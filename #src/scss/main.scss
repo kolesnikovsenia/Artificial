@@ -12,8 +12,9 @@
 }
 
 .container{
-	max-width: 1352px;
+	max-width: 1186px;
 	margin: 0 auto;
+	padding: 0px 20px;
 }
 // General
 
@@ -21,22 +22,16 @@
 
 .menu{
 	background: $header_color;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	padding: 21px 0px;
 	.logo{
 		display: flex;
 		align-items: center;
 		gap: 15px;
+		margin-right: 84px;
 		.img{
 			border: none;
 			background: none;
 			cursor: pointer;
-			transition: 0.6s all;
-			&:hover{
-				background: $_blue;
-				border-radius: 100%;
-				padding: 0px 12px;
-			}
 		}
 		&_text{
 			@include logo_text;
@@ -47,12 +42,11 @@
 		}}
 	&_row{
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
-		.rows{
+		align-items: center;
+		.row{
 			display: flex;
 			align-items: center;
-			gap: 84px;
 		}
 	}
 .link_list{
@@ -70,9 +64,88 @@
 	@include small_btn;
 	&:hover{
 		background: $_white;
-		color: black;
+		color: $_blue;
 	}
 }}
 
 // Welcome section
 
+.welcome_section{
+	padding-top: 49px;
+	background: $welcome_section_color;
+	padding-bottom: 99px;
+	&_row{
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&_column_text{
+			padding-top: 130px;
+			width: 50%;
+			display: flex;
+			align-items: baseline;
+			flex-direction: column;
+			.pre_title{
+				@include pre_title;
+				margin-bottom: 10px;
+			}
+			.title{
+				@include h1;
+				margin-bottom: 40px;
+			}
+			.text{
+				@include welcome_text;
+				margin-bottom: 50px;
+			}
+			.btn_row{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.btn{
+					@include welcome_btn;
+					display: flex;
+					align-items: center;
+					&:nth-last-child(2){
+						margin-right: 20px;
+					}
+					img{
+						margin-right: 8px;
+						@include transition;
+					}
+					&:hover{
+						background: $_white;
+						color: $_blue;
+						img{
+							@include filter;
+							margin-right: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+	&_partners{
+		padding-top: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.partner{
+			background: none;
+			border: none;
+			cursor: pointer;
+			padding: 13px 13px;
+			border-radius: 20px;
+			@include transition;
+			&:hover{
+				background: $_blue;
+				@include filter;
+			}
+		}
+	}
+	.img{
+		position: absolute;
+		right: -20%;
+		top: 0;
+		bottom: 0;
+	}
+}
