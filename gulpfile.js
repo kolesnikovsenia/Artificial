@@ -13,14 +13,14 @@ const path={
 		html: [sorce_folder + "/*.html", "!"+sorce_folder + "/_*.html"],
 		css: sorce_folder + "/scss/*.scss", 
 		img: sorce_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-		js: sorce_folder + "/js/main.js",
+		js: sorce_folder + "/js/*.js",
 		icons: sorce_folder + "/icons/*.svg",
 	},
 	watch:{
 		html: sorce_folder + "/**/*.html",
 		css: sorce_folder + "/scss/**/*.scss",
 		img: sorce_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-		js: sorce_folder + "/js/main.js",
+		js: sorce_folder + "/js/*.js",
 		icons: sorce_folder + "/icons/*.svg",
 	},
 	clean: "./" + project_folder + "/"
