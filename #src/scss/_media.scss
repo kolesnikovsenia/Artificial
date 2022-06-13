@@ -68,6 +68,21 @@
 			width: 100%;
 		}
 	}
+	.slider{
+		.slick-slide{
+			gap: 12px;
+			width: 100%;
+			.title{
+				font-size: 15px;
+			}
+			.text{
+				font-size: 12px;
+			}
+			.img{
+				height: 80px;
+			}
+		}
+	}
 	.about{
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -108,6 +123,10 @@
 		&_row{
 			.logo_text{
 				@include logo_text_mobile;
+			}
+			.mobile_menu{
+				width: 100%;
+				padding: 20px 20px 0px 45px;
 			}
 		}
 	}
@@ -150,7 +169,26 @@
 	.section_benefit_text{
 		width: 100%;
 	}
-	.about__text{
-		width: 100%;
+	.slick-track{
+		margin: 0 auto;
+		gap: 10px;
+		align-items: center;
+	}
+	.slider{
+		.slick-slide{
+			gap: 10px;
+			.title{
+				font-size: 13px;
+			}
+			.text{
+				font-size: 10px;
+			}
+			.img{
+				height: 80px;
+			}
+		}
+		.about__text{
+			width: 100%;
+		}
 	}
 }
