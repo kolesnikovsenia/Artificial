@@ -1,3 +1,156 @@
-@import url(main.scss);
-@import url(_mixin.scss);
-@import url(_variable.scss);
+@import '_mixin.scss';
+@import '_variable.scss';
+
+
+@media (max-width: 1024px) {
+	.container{
+		max-width: 800px;
+	}
+	.navigation{
+		display: none;
+	}
+	.btn{
+		display: none;
+	}
+	.burger{
+		display: block;
+	}
+	.welcome_section{
+		&_row{
+			position: unset;
+			flex-direction: column-reverse;
+			&_column_text{
+				align-items: center;
+				padding-top: 50px;
+				width: 100%;
+				.title{
+					text-align: center;
+					@include h1_tablet;
+				}
+				.text{
+					text-align: center;
+				}
+			}
+		}
+		&_partners{
+			padding-top: 50px;
+			flex-direction: column;
+		}
+		.img{
+			position: unset;
+			height: 400px;
+			width: 100%;
+		}
+	}
+	.section_benefit{
+		position: unset;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		&_text{
+			width: 90%;
+			align-items: center;
+		}
+		&_row{
+			flex-direction: column-reverse;
+			.title{
+				text-align: center;
+				@include section_title_tablet;
+			}
+			.text{
+				text-align: center;
+				width: 100%;
+				@include section_text_tablet;
+			}
+		}
+		img{
+			position: unset;
+			height: 400px;
+			width: 100%;
+		}
+	}
+	.about{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		&__row{
+			position: unset;
+			display: flex;
+			align-items: center;
+			flex-direction: column-reverse;
+			.about__text{
+				width: 90%;
+				align-items: center;
+				.title{
+					text-align: center;
+					@include section_title_tablet;
+				}
+				.text{
+					text-align: center;
+					@include section_text_tablet;
+				}
+			}
+		}
+		img{
+			position: unset;
+			height: 400px;
+			width: 100%;
+		}
+	}
+	.footer__row{
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 425px){
+	.container{
+		max-width: 380px;
+	}
+	.menu{
+		&_row{
+			.logo_text{
+				@include logo_text_mobile;
+			}
+		}
+	}
+	.welcome_section{
+		&_row{
+			&_column_text{
+				.title{
+					@include h1_mobile;
+				}
+				.text{
+					@include welcome_text_mobile;
+					margin-bottom: 20px;
+				}
+				.btn_row{
+					flex-direction: column;
+					.btn{
+						@include welcome_btn_mobile;
+						justify-content: center;
+						width: 100%;
+						&:nth-child(1){
+							margin-right: 0px;
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+		&_partners{
+			width: 100%;
+			.partner{
+				img{
+					max-width: 80%;
+				}
+			}
+		}
+		.img{
+			width: 100%;
+		}
+	}
+	.section_benefit_text{
+		width: 100%;
+	}
+	.about__text{
+		width: 100%;
+	}
+}

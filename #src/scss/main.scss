@@ -1,5 +1,6 @@
 @import '_mixin.scss';
 @import '_variable.scss';
+@import '_media.scss';
 
 // General
 *{
@@ -15,6 +16,21 @@
 	max-width: 1186px;
 	margin: 0 auto;
 	padding: 0px 20px;
+}
+
+.burger{
+	display: none;
+	width: 40px;
+	height: 40px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	@include transition;
+	.icon{
+		width: 100%;
+		background-color: $_blue;
+		border-radius: 13%;
+	}
 }
 // General
 

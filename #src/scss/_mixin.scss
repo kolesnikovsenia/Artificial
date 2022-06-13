@@ -130,3 +130,67 @@
 	line-height: 18px;
 	color: $_white;
 }
+
+
+// mixin to tablet
+
+@mixin h1_tablet {
+	ont-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: $_white;
+}
+
+@mixin section_title_tablet{
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 130%;
+	color: $_white;
+}
+
+@mixin section_text_tablet{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 160%;
+	color: $_white;
+	opacity: 0.7;
+}
+
+// mixin to mobile
+
+@mixin h1_mobile {
+	ont-weight: 600;
+	font-size: 30px;
+	line-height: 130%;
+	color: $_white;
+}
+
+@mixin welcome_text_mobile {
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 160%;
+	opacity: 0.7;
+	color: $_white;
+}
+
+@mixin welcome_btn_mobile {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 27px;
+	color: $_white;
+	padding: 10px 15px;
+	cursor: pointer;
+	border: none;
+	background: $_blue;
+	border-radius: 6px;
+	@include transition;
+}
+
+@mixin logo_text_mobile{
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 21px;
+	color: $_blue;
+	cursor: pointer;
+	@include transition;
+}
